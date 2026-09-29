@@ -20,7 +20,7 @@ class AdaptadorInventario implements Inventario {
     }
 
     public agregarEquipo(nombre: string, tipo: string, estado: "disponible" | "en reparación"): void {
-        this.inventarioViejo.agregarItem()
+        this.inventarioViejo.agregarItem(`nombre: "${nombre}," tipo: "${tipo}", estado: "${estado}"`)
     }
 
     public listarEquipos(): void {
